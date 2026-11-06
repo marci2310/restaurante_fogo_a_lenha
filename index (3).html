@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7b2d16" />
+  <meta name="description" content="Cardápio digital do Restaurante Fogo a Lenha: comida brasileira caseira, buffet à vontade e opções vegetarianas. R. Gervásio Pires, 264 - Boa Vista, Recife-PE." />
+  <meta property="og:title" content="Restaurante Fogo a Lenha — Cardápio" />
+  <meta property="og:description" content="Comida caseira feita no fogão a lenha. Buffet à vontade e sabor de casa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔥%3C/text%3E%3C/svg%3E" />
+  <title>Restaurante Fogo a Lenha | Cardápio</title>
+  <style>
+    :root{--marrom:#47251a;--marrom-2:#633322;--terracota:#a94624;--brasa:#e36a27;--creme:#fff5e3;--papel:#fffaf0;--verde:#356b4b;--sombra:0 12px 30px rgba(62,31,18,.13);--raio:18px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--creme);color:var(--marrom);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+    h1,h2,h3,.brand{font-family:Georgia,'Times New Roman',serif}
+    a{color:inherit}
+    :focus-visible{outline:3px solid var(--brasa);outline-offset:2px}
+    .wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+    .hero{background:linear-gradient(135deg,rgba(63,27,17,.97),rgba(128,45,23,.94)),url('https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1800&q=80') center/cover;color:#fff;padding:28px 0 76px;position:relative;overflow:hidden}
+    .hero:after{content:"✦";position:absolute;right:7%;bottom:10px;color:#ffb45b;font-size:110px;opacity:.16;transform:rotate(-15deg)}
+    .topline{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-size:clamp(1.45rem,4vw,2rem);font-weight:700;letter-spacing:.2px}
+    .brand small{display:block;font:600 .68rem Inter,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#ffc47a;margin-top:3px}
+    .hero-main{max-width:720px;padding-top:52px}
+    .eyebrow{color:#ffc47a;text-transform:uppercase;font-size:.76rem;font-weight:800;letter-spacing:2px}
+    .hero h1{font-size:clamp(2.3rem,7vw,5rem);line-height:1.02;margin:10px 0 14px}
+    .hero p{font-size:1.05rem;max-width:590px;color:#ffe9cd}
+    .rating{display:inline-flex;align-items:center;gap:8px;font-weight:700}
+    .rating span{color:#ffbd4a;font-size:1.35rem}
+    .status{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.28);padding:8px 12px;border-radius:999px;font-size:.86rem}
+    .dot{width:9px;height:9px;border-radius:50%;background:#69d58e;box-shadow:0 0 0 4px rgba(105,213,142,.15)}
+    .dot.closed{background:#ff8f70;box-shadow:none}
+    .actions{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:-28px;position:relative;z-index:2}
+    .action{background:var(--papel);border:1px solid #edd9be;border-radius:14px;padding:14px 8px;text-align:center;text-decoration:none;font-weight:750;box-shadow:var(--sombra);font-size:.86rem;cursor:pointer;color:var(--marrom);font-family:inherit}
+    .action b{display:block;font-size:1.35rem;margin-bottom:3px}
+    .action:hover{transform:translateY(-2px);transition:.2s;border-color:var(--brasa)}
+    .tabs{position:sticky;top:0;z-index:5;background:rgba(255,250,240,.94);backdrop-filter:blur(12px);border-bottom:1px solid #ecd8bd;margin-top:28px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+    .tabs::-webkit-scrollbar{display:none}
+    .tabs .wrap{display:flex;gap:5px}
+    .tab{padding:15px 14px;border:0;background:none;color:var(--marrom-2);font-weight:750;cursor:pointer;font-family:inherit;font-size:1rem;border-bottom:3px solid transparent}
+    .tab:hover,.tab:focus-visible{color:var(--terracota)}
+    .tab.active{color:var(--terracota);border-bottom-color:var(--brasa)}
+    main{padding:28px 0 110px}
+    [data-category],#horarios{scroll-margin-top:56px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:34px 0 14px}
+    .section-head h2{font-size:clamp(1.55rem,4vw,2rem);margin:0}
+    .section-head p{margin:0;color:#815b49;font-size:.9rem}
+    .tools{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+    .search{flex:1;min-width:210px;border:1px solid #dfc5a5;border-radius:12px;padding:13px 15px;background:#fffdf8;color:var(--marrom);font-size:1rem;font-family:inherit}
+    .filter{border:1px solid #dfc5a5;background:#fffdf8;border-radius:12px;padding:12px 15px;font-weight:700;color:var(--marrom);cursor:pointer;font-family:inherit;font-size:1rem}
+    .filter.active{background:var(--verde);border-color:var(--verde);color:#fff}
+    .buffet{background:linear-gradient(120deg,#fff0d5,#f7d19a);border:1px solid #e6bb7c;border-radius:var(--raio);padding:23px;box-shadow:var(--sombra);display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+    .buffet h2{margin:0 0 6px}
+    .buffet p{margin:5px 0;color:#70432d}
+    .price{font-family:Georgia,serif;font-weight:800;font-size:2rem;color:var(--terracota);white-space:nowrap}
+    .notice{display:inline-block;margin-top:10px;padding:6px 10px;border-radius:8px;background:#8e311d;color:#fff;font-size:.78rem;font-weight:800}
+    .carousel{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 4px 15px 2px;scrollbar-width:none}
+    .carousel::-webkit-scrollbar{display:none}
+    .card{flex:0 0 81%;scroll-snap-align:start;background:var(--papel);border:1px solid #ecd8bd;border-radius:var(--raio);overflow:hidden;box-shadow:0 5px 16px rgba(62,31,18,.07);min-width:0}
+    .card[hidden]{display:none}
+    .card-img{height:155px;background:#d9b18a;position:relative}
+    .card-img img{width:100%;height:100%;object-fit:cover;display:block}
+    .card-img:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(40,16,7,.42));pointer-events:none}
+    .card-body{padding:15px}
+    .card h3{font-size:1.2rem;margin:0 0 5px}
+    .card p{margin:0;color:#775a49;font-size:.9rem;min-height:44px}
+    .card-foot{display:flex;justify-content:space-between;align-items:center;margin-top:13px;gap:8px}
+    .card-price{font-weight:850;color:var(--terracota);font-size:1.05rem}
+    .badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px;min-height:24px}
+    .badge{font-size:.7rem;font-weight:750;background:#f2e2c9;color:#70432d;padding:4px 7px;border-radius:999px}
+    .badge.green{background:#e1f1e4;color:#28643f}
+    .badge.hot{background:#ffe0c8;color:#a33a1d}
+    .arrows{display:flex;gap:7px}
+    .arrow{border:1px solid #dfc5a5;background:#fffaf0;border-radius:50%;width:37px;height:37px;font-size:1.45rem;line-height:1;color:var(--marrom);cursor:pointer}
+    .progress{text-align:center;color:#8a6048;font-size:.78rem;letter-spacing:3px;min-height:18px}
+    .progress b{color:var(--terracota)}
+    .hours-review{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .panel{background:var(--papel);border:1px solid #ecd8bd;border-radius:var(--raio);padding:20px;box-shadow:var(--sombra)}
+    .panel h2{margin:0 0 12px}
+    .hours{display:grid;gap:4px}
+    .hours div{display:flex;justify-content:space-between;padding:8px 9px;border-radius:8px;color:#674635}
+    .hours .today{background:#f7d7b3;font-weight:800;color:var(--terracota)}
+    .google{background:linear-gradient(135deg,#fffaf0,#f7e3ca)}
+    .google .big{font:800 3rem Georgia,serif;color:var(--terracota);line-height:1}
+    .google a{display:inline-block;margin-top:15px;color:var(--terracota);font-weight:800}
+    .footer{background:var(--marrom);color:#ffe9cf;padding:34px 0 85px}
+    .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px}
+    .footer h3{color:#ffc47a;margin-top:0}
+    .footer p{color:#e8cdb5;margin:7px 0}
+    .qr{width:115px;height:115px;border-radius:10px;background:#fff;padding:6px;display:block}
+    .copy{border-top:1px solid #754333;margin-top:25px;padding-top:16px;font-size:.8rem;color:#d8b59b}
+    .empty{display:none;text-align:center;color:#805e4a;padding:25px}
+    .to-top{position:fixed;right:18px;bottom:18px;width:47px;height:47px;border:0;border-radius:50%;background:var(--brasa);color:#fff;font-size:1.3rem;box-shadow:var(--sombra);cursor:pointer;z-index:11}
+    @media(min-width:700px){.card{flex-basis:31.5%}.card-img{height:170px}.hero{padding-top:36px}.hero-main{padding-top:70px}}
+    @media(max-width:650px){.action{font-size:.67rem;padding:10px 3px}.action b{font-size:1.1rem}.buffet{grid-template-columns:1fr}.price{font-size:1.65rem}.hours-review,.footer-grid{grid-template-columns:1fr}.topline{align-items:flex-start}.status{font-size:.72rem}.section-head{align-items:flex-start}.section-head .arrows{display:none}}
+    @media(prefers-reduced-motion:reduce){html,.carousel{scroll-behavior:auto}.action:hover{transform:none;transition:none}}
+  </style>
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <div class="wrap">
+      <div class="topline">
+        <div class="brand">Fogo a Lenha<small>Restaurante &amp; comida caseira</small></div>
+        <div class="status" id="status" role="status"><i class="dot"></i><span>Calculando...</span></div>
+      </div>
+      <div class="hero-main">
+        <div class="eyebrow">Sabor que abraça</div>
+        <h1>Comida de verdade,<br>feita com carinho.</h1>
+        <p>Receitas brasileiras, tempero de casa e aquele gostinho especial do fogão a lenha. Sirva-se à vontade!</p>
+        <div class="rating"><span aria-hidden="true">★</span> 4,5 <small>(666 avaliações no Google)</small></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap actions" aria-label="Ações rápidas">
+    <a class="action" href="https://wa.me/558187318785" target="_blank" rel="noopener"><b aria-hidden="true">◉</b>WhatsApp</a>
+    <a class="action" href="tel:+558187318785"><b aria-hidden="true">☎</b>Ligar</a>
+    <a class="action" href="https://www.google.com/maps/search/?api=1&query=Restaurante+Fogo+a+Lenha+R.+Gerv%C3%A1sio+Pires+264+Boa+Vista+Recife+PE" target="_blank" rel="noopener"><b aria-hidden="true">⌖</b>Como chegar</a>
+    <button class="action" id="shareBtn" type="button"><b aria-hidden="true">↗</b>Compartilhar</button>
+  </div>
+
+  <nav class="tabs" aria-label="Categorias do cardápio"><div class="wrap" id="tabs"></div></nav>
+
+  <main class="wrap">
+    <div class="buffet">
+      <div>
+        <h2>Buffet à vontade</h2>
+        <p>Arroz, feijão, carnes, massas, saladas e acompanhamentos do dia.</p>
+        <p><strong>Inclui:</strong> buffet livre + sobremesa simples.</p>
+        <span class="notice">Não aceitamos reservas</span>
+      </div>
+      <div class="price" id="buffetPrice">R$ 39,90</div>
+    </div>
+
+    <div class="tools">
+      <input class="search" id="search" type="search" placeholder="Buscar prato..." aria-label="Buscar prato">
+      <button class="filter" id="vegFilter" type="button" aria-pressed="false">🌱 Vegetarianos</button>
+    </div>
+
+    <div id="menu"></div>
+    <div class="empty" id="empty">Nenhum prato encontrado. Tente outra busca.</div>
+
+    <section id="horarios">
+      <div class="section-head"><div><h2>Horários</h2><p>Venha almoçar com a gente</p></div></div>
+      <div class="hours-review">
+        <div class="panel"><div class="hours" id="hours"></div></div>
+        <div class="panel google">
+          <h2>Avaliações</h2>
+          <div class="big">4,5 ★</div>
+          <p>666 avaliações no Google</p>
+          <a href="https://www.google.com/search?q=Restaurante+Fogo+a+Lenha+Recife" target="_blank" rel="noopener">Avaliar no Google →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Restaurante Fogo a Lenha</h3>
+        <p>Comida brasileira caseira, feita no fogão a lenha.</p>
+        <p>Preço médio: R$ 20–40 por pessoa</p>
+      </div>
+      <div>
+        <h3>Onde estamos</h3>
+        <p>R. Gervásio Pires, 264<br>Boa Vista, Recife-PE<br>CEP 50060-090</p>
+        <p><a href="tel:+558187318785">(81) 8731-8785</a></p>
+      </div>
+      <div>
+        <h3>Compartilhe o cardápio</h3>
+        <img class="qr" id="qr" alt="QR Code para este cardápio" width="115" height="115" hidden>
+        <p style="font-size:.8rem">Aponte a câmera do celular</p>
+      </div>
+    </div>
+    <div class="wrap copy">Site por Márcio · © <span id="year"></span> Restaurante Fogo a Lenha</div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <script>
+    /* ===================== EDITE AQUI ===================== */
+    const menuData = {
+      'Refeições': [
+        {name:'Filé de Frango à Parmegiana', desc:'Macarrão espaguete ao molho especial de tomate, filé de frango, queijo mussarela e batatas fritas.', price:'R$ 12,00', img:'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=900&q=80', badges:['⭐ Mais pedido']},
+        {name:'Lasanha de Carne', desc:'Lasanha bem recheada com o tempero especial da família.', price:'R$ 12,00', img:'https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=900&q=80', badges:['⭐ Mais pedido']},
+        {name:'Cozido de Carne', desc:'Maravilhoso cozido bem feito, com sabor original desde 2013.', price:'R$ 12,00', img:'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80', badges:['🔥 Feito na lenha','⭐ Mais pedido']}
+      ],
+      'Buffet': [
+        {name:'Cozido de Carne', desc:'Carne macia cozida lentamente com legumes e molho caseiro.', price:'R$ 24,90', img:'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80', badges:['🔥 Feito na lenha','⭐ Mais pedido']},
+        {name:'Arroz Branco', desc:'Soltinho, fresquinho e preparado todos os dias.', price:'Incluso no buffet', img:'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']},
+        {name:'Feijão Tropeiro', desc:'Feijão, farinha, couve, ovos e linguiça no tempero da casa.', price:'Incluso no buffet', img:'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80', badges:['⭐ Mais pedido']},
+        {name:'Frango Assado', desc:'Douradinho, suculento e assado com ervas brasileiras.', price:'Incluso no buffet', img:'https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80', badges:['🔥 Feito na lenha']},
+        {name:'Saladas da Estação', desc:'Folhas, legumes e molhos leves preparados diariamente.', price:'Incluso no buffet', img:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']}
+      ],
+      'Grelhados / Chapa': [
+        {name:'Rachid Wing', desc:'Asinhas de frango douradas com molho especial da casa.', price:'R$ 29,90', img:'https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=80', badges:['⭐ Mais pedido']},
+        {name:'Carne na Chapa', desc:'Corte selecionado, cebola tostada e farofa crocante.', price:'R$ 34,90', img:'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80', badges:['🔥 Feito na lenha']},
+        {name:'Macaxeira na Manteiga', desc:'Macaxeira macia finalizada na chapa com manteiga de garrafa.', price:'R$ 16,90', img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']}
+      ],
+      'Porções': [
+        {name:'Batata Frita', desc:'Batatas fritas sequinhas e crocantes.', price:'R$ 14,90', img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']},
+        {name:'Peixinho Frito', desc:'Porção crocante de peixinho, servida com limão.', price:'R$ 22,90', img:'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=80', badges:[]}
+      ],
+      'Café da manhã': [
+        {name:'Bolo de Rolo', desc:'Finas camadas de massa com goiabada, receita brasileira clássica.', price:'R$ 9,90', img:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80', badges:['⭐ Mais pedido']},
+        {name:'Café Coado', desc:'Café fresquinho passado na hora, com aroma de roça.', price:'R$ 5,90', img:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']},
+        {name:'Pão de Queijo', desc:'Quentinho, dourado e com muito queijo.', price:'R$ 7,90', img:'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']}
+      ],
+      'Bebidas': [
+        {name:'Suco Natural', desc:'Frutas da estação batidas na hora.', price:'R$ 8,90', img:'https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']},
+        {name:'Refrigerante', desc:'Lata bem gelada para acompanhar sua refeição.', price:'R$ 6,50', img:'https://images.unsplash.com/photo-1629203849820-fdd70d49c38e?auto=format&fit=crop&w=900&q=80', badges:[]},
+        {name:'Limonada da Casa', desc:'Limão, água gelada e um toque especial de hortelã.', price:'R$ 8,90', img:'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f4f?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']}
+      ],
+      'Sobremesas': [
+        {name:'Arroz Doce', desc:'Arroz cremoso doce com canela e leite condensado.', price:'R$ 12,90', img:'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80', badges:['🌱 Vegetariano']}
+      ]
+    };
+    /* Horários: [abre, fecha] em horas, por dia da semana (0 = domingo) */
+    const hoursByDay = {0:[7,19],1:[7,21],2:[7,21],3:[7,21],4:[7,21],5:[7,21],6:[7,21]};
+    /* =================== FIM DA ÁREA DE EDIÇÃO =================== */
+
+    const $ = id => document.getElementById(id);
+    const smooth = () => matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+    const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const slug = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    const pad = n => String(n).padStart(2,'0');
+    let vegetarianOnly = false;
+
+    /* Hora atual em Recife, independente do fuso do aparelho */
+    function recifeNow(){
+      const p = new Intl.DateTimeFormat('en-US',{timeZone:'America/Recife',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false})
+        .formatToParts(new Date()).reduce((o,x)=>(o[x.type]=x.value,o),{});
+      return {day:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday), mins:(parseInt(p.hour,10)%24)*60+parseInt(p.minute,10)};
+    }
+
+    function render(){
+      const menu = $('menu'), tabs = $('tabs');
+      menu.innerHTML = ''; tabs.innerHTML = '';
+      Object.entries(menuData).forEach(([cat,items])=>{
+        const id = slug(cat);
+        tabs.insertAdjacentHTML('beforeend', `<button class="tab" type="button" data-target="${id}">${esc(cat)}</button>`);
+        const sec = document.createElement('section');
+        sec.id = id; sec.dataset.category = cat;
+        sec.innerHTML = `<div class="section-head"><div><h2>${esc(cat)}</h2><p>${items.length} ${items.length===1?'opção':'opções'} para escolher</p></div><div class="arrows"><button class="arrow" type="button" data-move="-1" data-id="${id}" aria-label="Anterior">‹</button><button class="arrow" type="button" data-move="1" data-id="${id}" aria-label="Próximo">›</button></div></div><div class="carousel" id="carousel-${id}"></div><div class="progress" id="progress-${id}" aria-hidden="true"></div>`;
+        menu.appendChild(sec);
+        const car = sec.querySelector('.carousel');
+        items.forEach(it=>{
+          const veg = it.badges.some(b=>b.includes('Vegetariano'));
+          const badges = it.badges.map(b=>`<span class="badge ${b.includes('Vegetariano')?'green':b.includes('Mais')?'hot':''}">${esc(b)}</span>`).join('');
+          const c = document.createElement('article');
+          c.className = 'card'; c.dataset.name = it.name.toLowerCase(); c.dataset.veg = veg;
+          c.innerHTML = `<div class="card-img"><img src="${esc(it.img)}" alt="${esc(it.name)}" loading="lazy" decoding="async" width="900" height="600" onerror="this.remove()"></div><div class="card-body"><h3>${esc(it.name)}</h3><p>${esc(it.desc)}</p><div class="badges">${badges}</div><div class="card-foot"><strong class="card-price">${esc(it.price)}</strong></div></div>`;
+          car.appendChild(c);
+        });
+        updateProgress(id);
+        car.addEventListener('scroll',()=>updateProgress(id),{passive:true});
+      });
+    }
+
+    function updateProgress(id){
+      const car = $('carousel-'+id), p = $('progress-'+id);
+      const cards = [...car.querySelectorAll('.card')].filter(c=>!c.hidden);
+      if(cards.length<2){p.textContent='';return}
+      const idx = Math.min(cards.length-1, Math.round(car.scrollLeft/(cards[0].offsetWidth+14)));
+      p.innerHTML = cards.map((_,i)=>i===idx?'<b>●</b>':'○').join(' ');
+    }
+
+    function filter(){
+      const q = $('search').value.toLowerCase().trim();
+      let count = 0;
+      document.querySelectorAll('.card').forEach(c=>{
+        const show = (!q || c.dataset.name.includes(q)) && (!vegetarianOnly || c.dataset.veg==='true');
+        c.hidden = !show; if(show) count++;
+      });
+      document.querySelectorAll('[data-category]').forEach(sec=>{
+        const has = [...sec.querySelectorAll('.card')].some(c=>!c.hidden);
+        sec.style.display = has ? 'block' : 'none';
+        const id = slug(sec.dataset.category);
+        document.querySelector(`.tab[data-target="${id}"]`).style.display = has ? '' : 'none';
+        $('carousel-'+id).scrollLeft = 0;
+        updateProgress(id);
+      });
+      $('empty').style.display = count ? 'none' : 'block';
+    }
+
+    function setStatus(){
+      const {day,mins} = recifeNow(), h = hoursByDay[day];
+      const isOpen = mins >= h[0]*60 && mins < h[1]*60;
+      document.querySelector('#status span').textContent = isOpen ? 'Aberto agora' : 'Fechado';
+      document.querySelector('.dot').classList.toggle('closed', !isOpen);
+    }
+
+    function renderHours(){
+      const names = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+      const today = recifeNow().day;
+      $('hours').innerHTML = [1,2,3,4,5,6,0].map(d=>{
+        const [a,f] = hoursByDay[d], isToday = d===today;
+        return `<div class="${isToday?'today':''}"><span>${names[d]}${isToday?' · hoje':''}</span><span>${pad(a)}:00–${pad(f)}:00</span></div>`;
+      }).join('');
+    }
+
+    async function sharePage(){
+      if(navigator.share){
+        try{await navigator.share({title:'Restaurante Fogo a Lenha',text:'Confira nosso cardápio!',url:location.href})}catch(e){}
+      }else{
+        try{await navigator.clipboard.writeText(location.href);alert('Link copiado!')}catch(e){prompt('Copie o link:',location.href)}
+      }
+    }
+
+    /* Aba ativa conforme a rolagem */
+    function observeSections(){
+      if(!('IntersectionObserver' in window)) return;
+      const io = new IntersectionObserver(entries=>{
+        entries.forEach(en=>{
+          if(en.isIntersecting){
+            document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active', t.dataset.target===en.target.id));
+          }
+        });
+      },{rootMargin:'-30% 0px -60% 0px'});
+      document.querySelectorAll('[data-category]').forEach(s=>io.observe(s));
+    }
+
+    document.addEventListener('click',e=>{
+      const tab = e.target.closest('.tab');
+      if(tab){const el=$(tab.dataset.target); if(el) el.scrollIntoView({behavior:smooth(),block:'start'}); return}
+      const arrow = e.target.closest('.arrow');
+      if(arrow){const car=$('carousel-'+arrow.dataset.id); car.scrollBy({left:Number(arrow.dataset.move)*car.clientWidth*.82,behavior:smooth()})}
+    });
+    $('search').addEventListener('input',filter);
+    $('vegFilter').addEventListener('click',e=>{
+      vegetarianOnly = !vegetarianOnly;
+      e.currentTarget.classList.toggle('active',vegetarianOnly);
+      e.currentTarget.setAttribute('aria-pressed',vegetarianOnly);
+      filter();
+    });
+    $('shareBtn').addEventListener('click',sharePage);
+    $('toTop').addEventListener('click',()=>scrollTo({top:0,behavior:smooth()}));
+
+    render(); renderHours(); setStatus(); observeSections();
+    setInterval(setStatus,60000);
+    $('year').textContent = new Date().getFullYear();
+
+    /* QR Code (só aparece se o serviço carregar e o site estiver publicado) */
+    if(location.protocol.startsWith('http')){
+      const qr = $('qr');
+      qr.onload = () => qr.hidden = false;
+      qr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&data='+encodeURIComponent(location.href);
+    }
+  </script>
+</body>
+</html>
